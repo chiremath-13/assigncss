@@ -1,0 +1,31 @@
+body{ 
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.boxes{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+   -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(17, 13, 13, 0.267));
+}
+
+.boxes img{
+    max-width: 320px;
+    display: flex;
+    transform: perspective(800px) rotateY(15deg);
+    transition: 0.4s;
+    box-shadow: 0px 0px 8px rgb(146, 144, 144);
+    border-radius: 8px;
+}
+
+.boxes:hover img{
+    opacity: 0.3; 
+}
+.boxes img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
